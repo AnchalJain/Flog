@@ -1,0 +1,13 @@
+<!-- Base template with the navigation bar -->
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Flog</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Flog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
